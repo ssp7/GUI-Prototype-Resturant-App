@@ -127,21 +127,21 @@
                         <Font size="14.0" />
                      </font>
                   </Text>
-                  <Button mnemonicParsing="false" onAction="#addButton" prefHeight="25.0" prefWidth="65.0" text="Add" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#addButton" prefHeight="25.0" prefWidth="65.0" text="Add" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-                  <Button mnemonicParsing="false" onAction="#addButton" prefHeight="25.0" prefWidth="65.0" text="Add" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-                  <Button mnemonicParsing="false" onAction="#addButton" prefHeight="25.0" prefWidth="65.0" text="Add" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-                  <Button mnemonicParsing="false" onAction="#addButton" prefHeight="25.0" prefWidth="65.0" text="Add" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-                  <Button mnemonicParsing="false" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#removeButton" prefHeight="25.0" prefWidth="65.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-                  <Button mnemonicParsing="false" onAction="#removeButton" prefHeight="25.0" prefWidth="64.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-                  <Button mnemonicParsing="false" onAction="#removeButton" prefHeight="25.0" prefWidth="65.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                  <Button mnemonicParsing="false" onAction="#removeButton" prefHeight="25.0" prefWidth="65.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                  <Text fx:id="noOfHamburger" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#addHamburger" prefHeight="25.0" prefWidth="65.0" text="Add" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#addCheeseburger" prefHeight="25.0" prefWidth="65.0" text="Add" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#addFries" prefHeight="25.0" prefWidth="65.0" text="Add" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#addFountainDrink" prefHeight="25.0" prefWidth="65.0" text="Add" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#addSundae" prefHeight="25.0" prefWidth="65.0" text="Add" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#removeHamburger" prefHeight="25.0" prefWidth="66.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#removeSundae" prefHeight="25.0" prefWidth="65.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#removeFountainDrink" prefHeight="25.0" prefWidth="64.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#removeFries" prefHeight="25.0" prefWidth="65.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#removeCheeseburger" prefHeight="25.0" prefWidth="65.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Text fx:id="No_Hamburger" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Text fx:id="No_CheeseBurger" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Text fx:id="No_Fries" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Text fx:id="No_FountainDrink" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Text fx:id="No_Sundae" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5" />
                </children>
             </GridPane>
             <Text layoutX="11.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subtotal :" wrappingWidth="85.9482421875">
