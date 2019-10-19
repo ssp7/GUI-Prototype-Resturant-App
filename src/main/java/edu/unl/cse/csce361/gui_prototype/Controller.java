@@ -1,6 +1,6 @@
 package edu.unl.cse.csce361.gui_prototype;
 
-import java.awt.event.ActionEvent;
+import javafx.event.ActionEvent;
 
 public class Controller {
 	
@@ -14,6 +14,9 @@ public class Controller {
 		else {
 			noOfItems--;
 		}
+	}
+	public void addButton(ActionEvent event) {
+		noOfItems++;
 	}
 	
 }
