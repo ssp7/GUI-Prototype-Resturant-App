@@ -137,11 +137,11 @@
                   <Button mnemonicParsing="false" onAction="#removeFountainDrink" prefHeight="25.0" prefWidth="64.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="4" />
                   <Button mnemonicParsing="false" onAction="#removeFries" prefHeight="25.0" prefWidth="65.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="3" />
                   <Button mnemonicParsing="false" onAction="#removeCheeseburger" prefHeight="25.0" prefWidth="65.0" text="Remove" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                  <Text fx:id="No_Hamburger" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                  <Text fx:id="No_CheeseBurger" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                  <Text fx:id="No_Fries" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                  <Text fx:id="No_FountainDrink" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                  <Text fx:id="No_Sundae" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Text fx:id="Hamburger" onDragDetected="#No_Hamburger_String" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Text fx:id="Cheeseburger" onDragDetected="#No_CheeseBurger_String" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Text fx:id="Fries" onDragDetected="#No_Fries_String" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Text fx:id="FountainDrinks" onDragDetected="#No_FountainDrink_String" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Text fx:id="Sundae" onDragDetected="#No_Sundae_String" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5" />
                </children>
             </GridPane>
             <Text layoutX="11.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subtotal :" wrappingWidth="85.9482421875">
@@ -161,17 +161,17 @@
             </Text>
             <Line endX="284.0" layoutX="109.0" layoutY="457.0" startX="-109.0" />
             <Button layoutX="143.0" layoutY="509.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Checkout" />
-            <Text layoutX="291.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00">
+            <Text fx:id="Subtotal" layoutX="291.0" layoutY="376.0" onDragDetected="#Subtotal_String" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Text layoutX="291.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00">
+            <Text fx:id="Salestax_ofItems" layoutX="291.0" layoutY="424.0" onDragDetected="#SalesTax_String" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Text layoutX="289.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00">
+            <Text fx:id="Grandtotal" layoutX="289.0" layoutY="490.0" onDragDetected="#GrandTotal_String" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00">
                <font>
                   <Font size="18.0" />
                </font>

@@ -12,8 +12,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("home.fxml"));
-        primaryStage.setTitle("Bohn's Burger Bazaar");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setTitle("Hello World");
+        primaryStage.setScene(new Scene(root, 393, 599));
         primaryStage.show();
     }
 
@@ -21,5 +21,7 @@ public class Main extends Application {
     public static void main(String[] args) {
     
         launch(args);
+        Controller control = new Controller();
+      
     }
 }

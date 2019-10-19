@@ -1,8 +1,24 @@
 package edu.unl.cse.csce361.gui_prototype;
 
+import java.awt.Desktop.Action;
+import java.text.DecimalFormat;
+import java.awt.*;
+import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 
 public class Controller {
+	DecimalFormat formatting = new DecimalFormat("#.000");
+	@FXML
+	public Text Hamburger;
+	public Text Cheeseburger;
+	public Text Fries;
+	public Text FountainDrinks;
+	public Text Sundae;
+	public Text Subtotal;
+	public Text Salestax_ofItems;
+	public Text Grandtotal;
 
 	public int No_Hamburger = 0;
 	public int No_CheeseBurger = 0;
@@ -10,6 +26,9 @@ public class Controller {
 	public int No_FountainDrink = 0;
 	public int No_Sundae = 0;
 
+	public double subTotal;
+	public double salesTax;
+	public double grandTotal;
 
 
 	public void removeHamburger(ActionEvent event) {
@@ -20,9 +39,26 @@ public class Controller {
 		else {
 			No_Hamburger--;
 		}
+		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
+		 salesTax = subTotal * 0.075; 
+		Hamburger.setText(Integer.toString(No_Hamburger));
+		 Subtotal.setText(Double.toString(subTotal));
+		 salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
+		 String tax = String.format("%.3f", salesTax);
+		 Salestax_ofItems.setText(tax);  
+		 grandTotal = subTotal + salesTax;
+		  Grandtotal.setText(Double.toString(grandTotal));
 	}
 	public void addHamburger(ActionEvent event) {
 		No_Hamburger++;
+		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
+		 Hamburger.setText(Integer.toString(No_Hamburger));
+		 Subtotal.setText(Double.toString(subTotal));
+		 salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
+		 String tax = String.format("%.3f", salesTax);
+		 Salestax_ofItems.setText(tax); 
+	        grandTotal = subTotal + salesTax;
+		  Grandtotal.setText(Double.toString(grandTotal));
 	}
 
 
@@ -35,9 +71,25 @@ public class Controller {
 		else {
 			No_CheeseBurger--;
 		}
+        subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
+		Cheeseburger.setText(Integer.toString(No_CheeseBurger));
+		Subtotal.setText(Double.toString(subTotal));
+		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
+		 String tax = String.format("%.3f", salesTax);
+		 Salestax_ofItems.setText(tax); 
+		grandTotal = subTotal + salesTax;
+		  Grandtotal.setText(Double.toString(grandTotal));
 	}
 	public void addCheeseburger(ActionEvent event) {
 		No_CheeseBurger++;
+		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
+		Cheeseburger.setText(Integer.toString(No_CheeseBurger));
+		Subtotal.setText(Double.toString(subTotal));
+		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
+		 String tax = String.format("%.3f", salesTax);
+		 Salestax_ofItems.setText(tax); 
+		grandTotal = subTotal + salesTax;
+		  Grandtotal.setText(Double.toString(grandTotal));
 	}
 
 
@@ -49,9 +101,25 @@ public class Controller {
 		else {
 			No_Fries--;
 		}
+		Fries.setText(Integer.toString(No_Fries)); 
+		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
+		Subtotal.setText(Double.toString(subTotal));
+		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
+		 String tax = String.format("%.3f", salesTax);
+		 Salestax_ofItems.setText(tax); 
+		grandTotal = subTotal + salesTax;
+		  Grandtotal.setText(Double.toString(grandTotal));
 	}
 	public void addFries(ActionEvent event) {
 		No_Fries++;
+		Fries.setText(Integer.toString(No_Fries));
+		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
+		Subtotal.setText(Double.toString(subTotal));
+		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
+		 String tax = String.format("%.3f", salesTax);
+		 Salestax_ofItems.setText(tax); 
+		grandTotal = subTotal + salesTax;
+		  Grandtotal.setText(Double.toString(grandTotal));
 	}
 
 
@@ -63,22 +131,95 @@ public class Controller {
 		else {
 			No_FountainDrink--;
 		}
+		FountainDrinks.setText(Integer.toString(No_FountainDrink)); 
+		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
+		Subtotal.setText(Double.toString(subTotal));
+		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
+		 String tax = String.format("%.3f", salesTax);
+		 Salestax_ofItems.setText(tax); 
+		grandTotal = subTotal + salesTax;
+		  Grandtotal.setText(Double.toString(grandTotal));
 	}
 	public void addFountainDrink(ActionEvent event) {
 		No_FountainDrink++;
+		FountainDrinks.setText(Integer.toString(No_FountainDrink)); 
+		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
+		
+		Subtotal.setText(Double.toString(subTotal));
+		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
+		 String tax = String.format("%.3f", salesTax);
+		 Salestax_ofItems.setText(tax); 
+		grandTotal = subTotal + salesTax;
+		  Grandtotal.setText(Double.toString(grandTotal));
 	}
 
 	public void removeSundae(ActionEvent event) {
 
 		if(No_Sundae == 0) {
 			No_Sundae = 0;
+
 		}
 		else {
 			No_Sundae--;
 		}
+		  Sundae.setText(Integer.toString(No_Sundae));
+			subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
+		  Subtotal.setText(Double.toString(subTotal));
+		  salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
+			 String tax = String.format("%.3f", salesTax);
+			 Salestax_ofItems.setText(tax); 
+		  grandTotal = subTotal + salesTax;
+		  Grandtotal.setText(Double.toString(grandTotal));
 	}
 	public void addSundae(ActionEvent event) {
 		No_Sundae++;
+		  Sundae.setText(Integer.toString(No_Sundae));
+			subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
+		  Subtotal.setText(Double.toString(subTotal));
+		  salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
+			 String tax = String.format("%.3f", salesTax);
+			 Salestax_ofItems.setText(tax); 
+		  grandTotal = subTotal + salesTax;
+		  Grandtotal.setText(Double.toString(grandTotal));
 	}
 
+	public void No_Hamburger_String() { 
+        
+      System.out.println(Hamburger);
+	}
+
+
+	public void No_CheeseBurger_String() { 
+		
+		System.out.println(Cheeseburger);
+	}
+
+	public void No_Fries_String() { 
+		 
+		System.out.println(Fries);
+	}
+	public void No_FountainDrink_String() { 
+		
+		System.out.println(FountainDrinks);
+	}
+
+	public void No_Sundae_String() { 
+        
+        System.out.println(Sundae);
+	}
+	public void Subtotal_String() { 
+    
+        System.out.println(Subtotal);
+	}
+	public void SalesTax_String() { 
+       
+        System.out.println(Salestax_ofItems);
+	}
+	public void GrandTotal_String() { 
+     
+        System.out.println(Grandtotal);
+	}
+	
 }
+
+

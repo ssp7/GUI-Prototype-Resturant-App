@@ -6,8 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="393.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="85.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Information">
          <font>
@@ -34,10 +33,10 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <TextField layoutX="197.0" layoutY="100.0" prefHeight="25.0" prefWidth="179.0" />
-      <TextField layoutX="197.0" layoutY="153.0" prefHeight="25.0" prefWidth="179.0" />
-      <TextField layoutX="197.0" layoutY="254.0" prefHeight="25.0" prefWidth="179.0" />
-      <TextField layoutX="197.0" layoutY="203.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField layoutX="197.0" layoutY="100.0" prefHeight="25.0" prefWidth="179.0" promptText="please enter your cad no." />
+      <TextField layoutX="197.0" layoutY="153.0" prefHeight="25.0" prefWidth="179.0" promptText="please enter expiration" />
+      <TextField layoutX="197.0" layoutY="254.0" prefHeight="25.0" prefWidth="179.0" promptText="please enter billing zip-code" />
+      <TextField layoutX="197.0" layoutY="203.0" prefHeight="25.0" prefWidth="179.0" promptText="please enter cvv code" />
       <Button layoutX="149.0" layoutY="423.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="97.0" text="Verify" />
    </children>
 </AnchorPane>
