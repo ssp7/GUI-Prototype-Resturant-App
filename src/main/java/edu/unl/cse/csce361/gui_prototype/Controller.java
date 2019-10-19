@@ -1,12 +1,19 @@
 package edu.unl.cse.csce361.gui_prototype;
 
 import java.awt.Desktop.Action;
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.awt.*;
+
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 
 public class Controller {
 	DecimalFormat formatting = new DecimalFormat("#.000");
@@ -218,6 +225,14 @@ public class Controller {
 	public void GrandTotal_String() { 
      
         System.out.println(Grandtotal);
+	}
+	
+	public void ChangeToPaymentPage(ActionEvent event) throws Exception {
+		Parent paymentPage = FXMLLoader.load(getClass().getResource("payment.fxml"));
+        Scene paymentScene = new Scene(paymentPage);
+        Stage window = (Stage)(((Node) event.getSource()).getScene().getWindow());
+        window.setScene(paymentScene);
+        window.show();
 	}
 	
 }

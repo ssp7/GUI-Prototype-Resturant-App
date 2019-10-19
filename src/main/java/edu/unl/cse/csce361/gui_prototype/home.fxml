@@ -160,7 +160,7 @@
                </font>
             </Text>
             <Line endX="284.0" layoutX="109.0" layoutY="457.0" startX="-109.0" />
-            <Button layoutX="143.0" layoutY="509.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Checkout" />
+            <Button layoutX="143.0" layoutY="509.0" mnemonicParsing="false" onAction="#ChangeToPaymentPage" prefHeight="25.0" prefWidth="107.0" text="Checkout" />
             <Text fx:id="Subtotal" layoutX="291.0" layoutY="376.0" onDragDetected="#Subtotal_String" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00">
                <font>
                   <Font size="18.0" />
