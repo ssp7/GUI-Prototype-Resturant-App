@@ -3,6 +3,9 @@ package edu.unl.cse.csce361.gui_prototype;
 import java.awt.Desktop.Action;
 import java.io.IOException;
 import java.text.DecimalFormat;
+
+import com.sun.glass.events.KeyEvent;
+
 import java.awt.*;
 
 import javafx.scene.Node;
@@ -26,6 +29,10 @@ public class Controller {
 	public Text Subtotal;
 	public Text Salestax_ofItems;
 	public Text Grandtotal;
+	public TextField cardNo;
+	public TextField expiration;
+	public TextField CVV;
+	public TextField Zip_Code;
 
 	public int No_Hamburger = 0;
 	public int No_CheeseBurger = 0;
@@ -234,6 +241,21 @@ public class Controller {
         window.setScene(paymentScene);
         window.show();
 	}
+	public void cardNo_String(ActionEvent event) {
+		
+	String  cardNo_String = cardNo.getText();
+		
+	}
+	public void expiration_String(ActionEvent event) {
+	String	expiration_String = expiration.getText();
+	}
+	public void CVV_String(ActionEvent event) {
+	String	CVV_String  = CVV.getText();
+	}
+	public void ZipCode_String(ActionEvent event) {
+	  String  Zip_Code_String = Zip_Code.getText();
+	}
+	
 	
 }
 
