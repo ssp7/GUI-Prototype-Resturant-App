@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="599.0" prefWidth="393.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="edu.unl.cse.csce361.gui_prototype.Controller">
+   <children>
+      <TextField layoutX="-1.0" layoutY="263.0" prefHeight="107.0" prefWidth="393.0" text="Thank You!">
+         <font>
+            <Font name="Broadway" size="51.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

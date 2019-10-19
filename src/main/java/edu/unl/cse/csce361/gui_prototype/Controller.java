@@ -255,7 +255,13 @@ public class Controller {
 	public void ZipCode_String(ActionEvent event) {
 	  String  Zip_Code_String = Zip_Code.getText();
 	}
-	
+	public void verify(ActionEvent event) throws IOException {
+		Parent paymentPage = FXMLLoader.load(getClass().getResource("ThankYouPage.fxml"));
+        Scene paymentScene = new Scene(paymentPage);
+        Stage window = (Stage)(((Node) event.getSource()).getScene().getWindow());
+        window.setScene(paymentScene);
+        window.show();
+	}
 	
 }
 
