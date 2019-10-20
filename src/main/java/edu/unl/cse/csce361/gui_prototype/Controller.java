@@ -92,8 +92,8 @@ public class Controller {
 		 salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
 		 String tax = String.format("%.2f", salesTax);
 		 Salestax_ofItems.setText("$"+tax); 
-	        grandTotal = subTotal + salesTax;
-		  Grandtotal.setText("$"+Double.toString(grandTotal));
+	     grandTotal = subTotal + salesTax;
+		 Grandtotal.setText("$"+Double.toString(grandTotal));
 
 	}
 
@@ -303,7 +303,7 @@ public class Controller {
 		}
 		
 		if (check) {
-			if (cardNo.getText().length() == 16 && expiration.getText().length() == 4 && CVV.getText().length() == 3 && Zip_Code.getText().length() == 6) {
+			if (cardNo.getText().length() == 16 && expiration.getText().length() == 4 && CVV.getText().length() == 3 && Zip_Code.getText().length() == 5) {
 				Parent paymentPage = FXMLLoader.load(getClass().getResource("ThankYouPage.fxml"));
 				Scene paymentScene = new Scene(paymentPage);
 				Stage window = (Stage)(((Node) event.getSource()).getScene().getWindow());
@@ -314,7 +314,7 @@ public class Controller {
 			} else {
 				Alert invalidCard = new Alert(AlertType.ERROR);
 				invalidCard.setHeaderText("Card Information Invalid");
-				invalidCard.setContentText("Card Number should be 16 digits, expiration 4 digits, CVV 3 digits, and Zip Code 5 digits");
+				invalidCard.setContentText("Card Number should be 16 digits, expiration 4 digits(9999), CVV 3 digits, and Zip Code 5 digits");
 				invalidCard.showAndWait();
 			}
 		}
