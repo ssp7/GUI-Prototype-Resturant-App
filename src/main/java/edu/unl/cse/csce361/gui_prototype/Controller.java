@@ -73,12 +73,12 @@ public class Controller {
 		salesTax = subTotal * 0.075; 
 		Hamburger.setText(Integer.toString(No_Hamburger));
 
-		 Subtotal.setText(Double.toString(subTotal));
+		 Subtotal.setText("$"+Double.toString(subTotal));
 		 salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
 		 String tax = String.format("%.2f", salesTax);
-		 Salestax_ofItems.setText(tax);  
+		 Salestax_ofItems.setText("$"+tax);  
 		 grandTotal = subTotal + salesTax;
-		  Grandtotal.setText(Double.toString(grandTotal));
+		  Grandtotal.setText("$"+Double.toString(grandTotal));
 
 	
 	}
@@ -88,12 +88,12 @@ public class Controller {
 		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
 
 		 Hamburger.setText(Integer.toString(No_Hamburger));
-		 Subtotal.setText(Double.toString(subTotal));
+		 Subtotal.setText("$"+Double.toString(subTotal));
 		 salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
 		 String tax = String.format("%.2f", salesTax);
-		 Salestax_ofItems.setText(tax); 
+		 Salestax_ofItems.setText("$"+tax); 
 	        grandTotal = subTotal + salesTax;
-		  Grandtotal.setText(Double.toString(grandTotal));
+		  Grandtotal.setText("$"+Double.toString(grandTotal));
 
 	}
 
@@ -109,27 +109,27 @@ public class Controller {
 		}
 		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
 		Cheeseburger.setText(Integer.toString(No_CheeseBurger));
-		Subtotal.setText(Double.toString(subTotal));
+		Subtotal.setText("$"+Double.toString(subTotal));
 		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
 
 		 String tax = String.format("%.2f", salesTax);
-		 Salestax_ofItems.setText(tax); 
+		 Salestax_ofItems.setText("$"+tax); 
 
 		grandTotal = subTotal + salesTax;
-		Grandtotal.setText(Double.toString(grandTotal));
+		Grandtotal.setText("$"+Double.toString(grandTotal));
 	}
 	public void addCheeseburger(ActionEvent event) {
 		No_CheeseBurger++;
 		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
 		Cheeseburger.setText(Integer.toString(No_CheeseBurger));
-		Subtotal.setText(Double.toString(subTotal));
+		Subtotal.setText("$"+Double.toString(subTotal));
 		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
 
 		 String tax = String.format("%.2f", salesTax);
-		 Salestax_ofItems.setText(tax); 
+		 Salestax_ofItems.setText("$"+tax); 
 
 		grandTotal = subTotal + salesTax;
-		Grandtotal.setText(Double.toString(grandTotal));
+		Grandtotal.setText("$"+Double.toString(grandTotal));
 	}
 
 
@@ -143,26 +143,26 @@ public class Controller {
 		}
 		Fries.setText(Integer.toString(No_Fries)); 
 		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
-		Subtotal.setText(Double.toString(subTotal));
+		Subtotal.setText("$"+Double.toString(subTotal));
 		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
 
 		 String tax = String.format("%.2f", salesTax);
-		 Salestax_ofItems.setText(tax); 
+		 Salestax_ofItems.setText("$"+tax); 
 
 		grandTotal = subTotal + salesTax;
-		Grandtotal.setText(Double.toString(grandTotal));
+		Grandtotal.setText("$"+Double.toString(grandTotal));
 	}
 	public void addFries(ActionEvent event) {
 		No_Fries++;
 		Fries.setText(Integer.toString(No_Fries));
 		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
-		Subtotal.setText(Double.toString(subTotal));
+		Subtotal.setText("$"+Double.toString(subTotal));
 		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
 
 		 String tax = String.format("%.2f", salesTax);
-		 Salestax_ofItems.setText(tax); 
+		 Salestax_ofItems.setText("$"+tax); 
 		grandTotal = subTotal + salesTax;
-		Grandtotal.setText(Double.toString(grandTotal));
+		Grandtotal.setText("$"+Double.toString(grandTotal));
 	}
 
 
@@ -176,26 +176,26 @@ public class Controller {
 		}
 		FountainDrinks.setText(Integer.toString(No_FountainDrink)); 
 		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
-		Subtotal.setText(Double.toString(subTotal));
+		Subtotal.setText("$"+Double.toString(subTotal));
 		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
 
 		 String tax = String.format("%.2f", salesTax);
-		 Salestax_ofItems.setText(tax); 
+		 Salestax_ofItems.setText("$"+tax); 
 		grandTotal = subTotal + salesTax;
-		Grandtotal.setText(Double.toString(grandTotal));
+		Grandtotal.setText("$"+Double.toString(grandTotal));
 	}
 	public void addFountainDrink(ActionEvent event) {
 		No_FountainDrink++;
 		FountainDrinks.setText(Integer.toString(No_FountainDrink)); 
 		subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
 
-		Subtotal.setText(Double.toString(subTotal));
+		Subtotal.setText("$"+Double.toString(subTotal));
 		salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
 
 		 String tax = String.format("%.2f", salesTax);
-		 Salestax_ofItems.setText(tax); 
+		 Salestax_ofItems.setText("$"+tax); 
 		grandTotal = subTotal + salesTax;
-		Grandtotal.setText(Double.toString(grandTotal));
+		Grandtotal.setText("$"+Double.toString(grandTotal));
 	}
 
 	public void removeSundae(ActionEvent event) {
@@ -210,12 +210,12 @@ public class Controller {
 
 		  Sundae.setText(Integer.toString(No_Sundae));
 			subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
-		  Subtotal.setText(Double.toString(subTotal));
+		  Subtotal.setText("$"+Double.toString(subTotal));
 		  salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
 			 String tax = String.format("%.2f", salesTax);
-			 Salestax_ofItems.setText(tax); 
+			 Salestax_ofItems.setText("$"+tax); 
 		  grandTotal = subTotal + salesTax;
-		  Grandtotal.setText(Double.toString(grandTotal));
+		  Grandtotal.setText("$"+Double.toString(grandTotal));
 
 	}
 	public void addSundae(ActionEvent event) {
@@ -223,12 +223,12 @@ public class Controller {
 
 		  Sundae.setText(Integer.toString(No_Sundae));
 			subTotal =  (5 * No_Hamburger) + (6 * No_CheeseBurger) + (2 * No_Fries) + (2 * No_FountainDrink) + (3 * No_Sundae);
-		  Subtotal.setText(Double.toString(subTotal));
+		  Subtotal.setText("$"+Double.toString(subTotal));
 		  salesTax =  (5 * No_Hamburger)*0.075 + (6 * No_CheeseBurger)*0.075 + (2 * No_Fries)*0.075 + (2 * No_FountainDrink)*0.075 + (3 * No_Sundae)*0.075;
 			 String tax = String.format("%.2f", salesTax);
-			 Salestax_ofItems.setText(tax); 
+			 Salestax_ofItems.setText("$"+tax); 
 		  grandTotal = subTotal + salesTax;
-		  Grandtotal.setText(Double.toString(grandTotal));
+		  Grandtotal.setText("$"+Double.toString(grandTotal));
 
 	}
 
@@ -278,6 +278,7 @@ public class Controller {
 		Parent paymentPage = FXMLLoader.load(getClass().getResource("payment.fxml"));
 		Scene paymentScene = new Scene(paymentPage);
 		Stage window = (Stage)(((Node) event.getSource()).getScene().getWindow());
+		window.setTitle("Thank you for your business");
 		window.setScene(paymentScene);
 		window.show();
 	}
@@ -306,6 +307,7 @@ public class Controller {
 				Parent paymentPage = FXMLLoader.load(getClass().getResource("ThankYouPage.fxml"));
 				Scene paymentScene = new Scene(paymentPage);
 				Stage window = (Stage)(((Node) event.getSource()).getScene().getWindow());
+				window.setTitle("Thank you for your business");
 				window.setScene(paymentScene);
 				window.show();
 				System.exit(0);
