@@ -33,10 +33,11 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <TextField fx:id="cardNo" layoutX="197.0" layoutY="100.0" onAction="#cardNo_String" prefHeight="25.0" prefWidth="179.0" promptText="please enter your cad no." />
+      <TextField fx:id="cardNo" layoutX="197.0" layoutY="100.0" onAction="#cardNo_String" prefHeight="25.0" prefWidth="179.0" promptText="please enter your card no." />
       <TextField fx:id="expiration" layoutX="197.0" layoutY="153.0" onAction="#expiration_String" prefHeight="25.0" prefWidth="179.0" promptText="please enter expiration" />
       <TextField fx:id="Zip_Code" layoutX="197.0" layoutY="254.0" onAction="#ZipCode_String" prefHeight="25.0" prefWidth="179.0" promptText="please enter billing zip-code" />
       <TextField fx:id="CVV" layoutX="197.0" layoutY="203.0" onAction="#CVV_String" prefHeight="25.0" prefWidth="179.0" promptText="please enter cvv code" />
       <Button layoutX="149.0" layoutY="423.0" mnemonicParsing="false" onAction="#verify" prefHeight="49.0" prefWidth="97.0" text="Verify" />
+      <Button layoutX="31.0" layoutY="435.0" mnemonicParsing="false" onAction="#back" text="Back" />
    </children>
 </AnchorPane>
